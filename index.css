@@ -8,12 +8,11 @@ body {
 	margin: 0px;
 	min-height: max(300px,100%);
 	min-width: 300px;
-	/* background-image: url("assets/images/background.png"); */
+	background-image: url("assets/images/background.png");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: linear-gradient(rgba(24, 35, 71), rgba(18, 73, 119));
 	font-family: "Lexend Peta";
   display: flex;
   align-items: center;

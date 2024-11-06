@@ -38,7 +38,7 @@ dropdown-box .header h3 {
 	text-align: left;
 	flex: 1 1 auto;
 	font-weight: 700;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }
 dropdown-box .header svg {
 	vertical-align: bottom;
@@ -61,7 +61,7 @@ dropdown-box .dropdown-hidden hr {
 dropdown-box .dropdown-hidden p {
 	position: relative;
 	width: 80%;
-	font-size: max(0.75em,16px);
+	font-size: max(0.75em,20px);
 	text-align: left;
 	height: 0px;
 	margin: 0px auto;
