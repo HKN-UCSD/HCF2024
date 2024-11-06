@@ -1,6 +1,6 @@
 dropdown-box h3 {
 	color: #ffffff;
-	font-family: "Lexend Peta";
+	font-family: "Book Antiqua";
 	text-align: center;
 	font-style: normal;
 	font-weight: 500;
@@ -8,14 +8,14 @@ dropdown-box h3 {
 }
 dropdown-box p {
 	color: #ffffff;
-	font-family: "Poppins";
+	font-family: "Book Antiqua";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 }
 
 dropdown-box a {
-	font-family: "Poppins"; 
+	font-family: "Book Antiqua"; 
 	color: white;
 }
 
@@ -61,7 +61,7 @@ dropdown-box .dropdown-hidden hr {
 dropdown-box .dropdown-hidden p {
 	position: relative;
 	width: 80%;
-	font-size: max(0.75em,14px);
+	font-size: max(0.75em,16px);
 	text-align: left;
 	height: 0px;
 	margin: 0px auto;

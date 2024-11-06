@@ -35,9 +35,6 @@
   <!-- START OF BODY -->
   <body>
     <button id="scrollTop">
-        <!-- <svg id="up-arrow" fill="white" width="30px" height="30px">
-          <polyline id="primary" points="21 18 12 6 3 18" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline>
-        </svg> -->
         ^
     </button>
     <div id="menu-bar" class="background-element">
@@ -51,12 +48,12 @@
       >
         <div class="hamburger-bar1"></div>
         <div class="hamburger-bar2"></div>
-        <div class="hamburger-bar3"></div>
       </div>
       <div
         id="dropdown-menu-bar-items"
         style="
-          background-image: url(./assets/images/background.png);
+          /* background-image: url(./assets/images/background.png); */
+          background-image: linear-gradient(rgba(24, 35, 71), rgba(18, 73, 119));
           position: relative;
           width: 100%;
           height: 0px;
@@ -75,35 +72,29 @@
     <div id="cover-page">
       <div id="cover-flex">
         <div>
-          <div style="max-height: 60vh; display: flex; flex-direction: column">
+          <div style="max-height: 80vh; display: flex; flex-direction: column">
             <img
               class="center"
               src="./assets/images/hcf-banner.jpg"
               style="
-                max-height: 400px;
                 min-height: 157px;
                 display: block;
                 flex: 6 6 60%;
-                width: 50vw;
+                width: 100%;
                 object-fit: contain;
               "
             />
-            <p
-              style="
-                font-size: max(12px, min(2.5vw, min(3vh, 1.25em)));
-                margin: min(8px, 2vh) auto;
-                width: min(50vw, 480px);
-                height: 20%;
-                flex: 2 2 20%;
-              "
-            >
-            UC San Diego Honors Career Fair
-            </p>
             <h3
               id="eventdate"
-              style="font-size: max(16px, min(2vw, 4vh)); flex: 2 2 20%"
+              style="font-size: max(24px, min(2vw, 4vh)); flex: 2 2 20%"
             >
               November 18th, 2024, 1-5pm
+            </h3>
+            <h3
+              id="eventlocation"
+              style="font-size: max(24px, min(2vw, 4vh)); flex: 2 2 20%"
+            >
+              Qualcomm Room, Jacobs Hall
             </h3>
           </div>
         </div>
@@ -111,7 +102,7 @@
       <a
         id="apply-link"
         href="https://forms.gle/JQUWEiCAMw28Bu8m6"
-        style="display: block; font-size: min(2.5vh, 1em); position: sticky"
+        style="display: block; font-size: min(2.5vh, 1em);"
         target="_blank"
         ><button
           class="big-button center main-font"
@@ -124,10 +115,11 @@
 
     <div id="about-page" style="margin-bottom: 5vh;">
       <h1 style="margin-bottom:1em">About</h1>
+      <hr style="width: 80%; border-top: 2px solid white; margin-bottom: 2em">
       <p
         style="
-          font-size: 1em;
-          font-family: Poppins;
+          font-size: 1.1em;
+          font-family: Book Antiqua;
           font-weight: 400;
           padding-bottom: max(3em, 3vh);
           max-width: min(700px, 80vw);
@@ -148,47 +140,90 @@
         "
       >
         <img
+          src="assets/images/scholars-society-logo.png"
+          style="height: auto; width: 90px; flex-shrink: 0; padding: 0px 15px 0px 15px"
+        />
+        <img
           src="assets/images/hkn-logo.png"
-          style="height: auto; width: 100px; flex-shrink: 0"
+          style="height: auto; width: 105px; flex-shrink: 0; padding: 0px 15px 0px 15px"
         />
         <img
           src="assets/images/tbp-logo.png"
-          style="height: auto; width: 150px; flex-shrink: 0;"
-        />
-        <img
-          src="assets/images/scholarssociety-logo.png"
-          style="height: auto; width: 100px; flex-shrink: 0"
+          style="height: auto; width: 80px; flex-shrink: 0; padding: 0px 15px 0px 15px"
         />
       </div>
 
-    <div id="sponsors" style="align-items: center; margin-bottom: 5vh;">
-      <h1 style="margin-bottom:1em">Sponsors</h1>
-      <div style="display: flex; flex-direction:column; align-self: center; align-content: center;">
-        <div style="display: flex; flex-direction: row; align-self: center; align-content: center;">
-          <img
-            src="assets/images/l3harris-logo.png"
-            style="width: 400px; height: auto; margin-bottom: 2em; object-fit: contain;"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-self: center; align-content: center;">
-          <img
-            src="assets/images/llnl-logo.png"
-            style="width: 270px; height: auto; margin-bottom: 2em; object-fit: contain;"
-          />
-          <img
-            src="assets/images/naasco-logo.png"
-            style="width: 250px; height: auto; margin-bottom: 2em; object-fit: contain;"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-self: center; align-content: center;">
-          <img
-            src="assets/images/ntagsw-logo.png"
-            style="width: 100px; height: auto; margin-bottom: 2em; object-fit: contain;"
-          />
-          <img
-            src="assets/images/nasc-logo.png"
-            style="width: 100px; height: auto; margin-bottom: 2em; object-fit: contain;"
-          />
+    
+    <!-- Sponsors -->
+    <div id="sponsors" style="align-items: center; justify-items: center; align-items: -webkit-center">
+      <div style="width: 80vw; background: rgba(0, 0, 0, 0.8); padding-top: 2em; border-radius: 25px; margin-bottom: 2em;">
+        <h1 style="margin-bottom:1em">Sponsors</h1>
+        <hr style="width: 80%; border-top: 2px solid white; margin-bottom: 2em">
+        <div style="display: flex; flex-direction:column; align-self: center; justify-self: center; align-content: center; justify-content: center;">
+          <div style="display: flex; flex-direction: row; align-self: center; align-content: center; justify-content: center;">
+            <img
+              src="assets/images/l3harris-logo.svg"
+              style="
+                    max-width: 400px;
+                    height: auto;
+                    margin-bottom: 2em;
+                    object-fit: contain;
+                    padding: 0px 10px 0px 10px;
+                    flex: 6 6 60%;
+                    width: 40vw;
+                    "
+            />
+          </div>
+          <div style="display: flex; flex-direction: row; align-self: center; align-content: center;">
+            <img
+              src="assets/images/llnl-logo.png"
+              style="
+                    max-width: 250px;
+                    height: auto;
+                    margin-bottom: 3em;
+                    object-fit: contain;
+                    padding: 0px 10px 0px 10px;
+                    flex: 6 6 60%;
+                    width: 25vw;
+                    "
+            />
+            <img
+              src="assets/images/naasco-logo.png"
+              style="
+                    width: 230px;
+                    height: auto;
+                    margin-bottom: 3em;
+                    object-fit: contain;
+                    padding: 0px 10px 0px 10px;
+                    flex: 6 6 60%;
+                    width: 25vw;
+                    "
+            />
+          </div>
+          <div style="display: flex; flex-direction: row; align-self: center; align-content: center;">
+            <img
+              src="assets/images/ntagsw-logo.png"
+              style="
+                    width: 128px;
+                    height: auto;
+                    margin-bottom: 2em;
+                    object-fit: contain;
+                    padding: 0px 10px 0px 10px;
+                    flex: 6 6 60%;
+                    width: 13vw;"
+            />
+            <img
+              src="assets/images/nasc-logo.png"
+              style="
+                    width: 120px;
+                    height: auto;
+                    margin-bottom: 2em;
+                    object-fit: contain;
+                    padding: 0px 10px 0px 10px;
+                    flex: 6 6 60%;
+                    width: 12vw;"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -196,6 +231,7 @@
     <!-- FAQ -->
     <div id="faq-page">
       <h1 style="margin-bottom:1em">FAQ</h1>
+      <hr style="width: 80%; border-top: 2px solid white; margin-bottom: 2em">
       <dropdown-box
         header="Why should I attend HCF?"
         text="HCF provides honors students with a private setting to engage with companies, providing more chance of recognition in the internship/job market. Additionally, recruiters are also aware of the honors status that students hold, giving more credibility to attendees."
@@ -206,7 +242,7 @@
       ></dropdown-box>
       <dropdown-box
         header="Which companies will be attending?"
-        text="This year the companies attending include: Lawrence Livermore National Laboratory, L3Harris, General Dynamics NASSCO, NTAG Southwest, and NAVAIR."
+        text="This year the companies attending include: L3Harris, Lawrence Livermore National Laboratory, General Dynamics NASSCO, NTAG Southwest, and NAVAIR."
       ></dropdown-box>
       <dropdown-box
         header="What is the dress code?"
@@ -224,6 +260,11 @@
         header="When is it?"
         text="Monday, April 18th, 2024 1-5pm"
       ></dropdown-box>
+      <dropdown-box
+        header="I have a question, who do I contact?"
+        text="Contact Ethan Jenkins at etjenkins@ucsd.edu"
+      ></dropdown-box>
     </div>
+
   </body>
 </html>
