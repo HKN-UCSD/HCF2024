@@ -3,14 +3,14 @@ dropdown-box h3 {
 	font-family: "Book Antiqua";
 	text-align: center;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 100;
 	font-size: 18px;
 }
 dropdown-box p {
 	color: #ffffff;
 	font-family: "Book Antiqua";
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 100;
 	font-size: 18px;
 }
 
@@ -62,6 +62,7 @@ dropdown-box .dropdown-hidden p {
 	position: relative;
 	width: 80%;
 	font-size: max(0.75em,20px);
+	font-weight: 100;
 	text-align: left;
 	height: 0px;
 	margin: 0px auto;
